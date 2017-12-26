@@ -1,0 +1,39 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.tejadroid.spiderview' // CREATE A GROUP ID FOR YOUR LIBRARY
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.tejadroid.spiderview' // CREATE A GROUP ID FOR YOUR LIBRARY
+                artifactId 'map-marker-spider-view' // THE NAME OF YOUR MODULE
+
+                name 'MapMarkerSpiderView' // YOUR LIBRARY NAME
+                description 'Spider View of Marker on Google map.' // YOUR LIBRARY DESCRIPTION
+                url 'https://github.com/tejadroidapp/map-marker-spider-view' // YOUR SITE
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'TejaDroid' //YOUR ID
+                        name 'Tejas Chauhan' //YOUR NAME
+                        email 'tejas.d.chauhan@gmail.com' //YOUR EMAIL
+                    }
+                }
+                scm {
+                    connection 'https://github.com/tejadroidapp/map-marker-spider-view.git' // YOUR GIT REPO
+                    developerConnection 'https://github.com/tejadroidapp/map-marker-spider-view.git' // YOUR GIT REPO
+                    url 'https://github.com/tejadroidapp/map-marker-spider-view' // YOUR SITE
+
+                }
+            }
+        }
+    }
+}

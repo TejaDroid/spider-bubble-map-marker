@@ -1,0 +1,63 @@
+apply plugin: 'com.jfrog.bintray'
+
+version = '1.0' //YOUR LIBRARY VERSION
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
+
+//bintray {
+//    user = 'tejadroidapp'
+//    key = 'b279a96d2e34f0223fcf33403ea2853a6a70210d'
+//
+//    configurations = ['archives']
+//
+//    pkg {
+//        repo = "MapMarkerSpiderView"
+//        name = "map-marker-spider-view"
+//        websiteUrl = 'https://github.com/tejadroidapp/map-marker-spider-view'
+//        vcsUrl = 'https://github.com/tejadroidapp/map-marker-spider-view.git'
+//        licenses = ["Apache-2.0"]
+//        publish = true
+//    }
+//}
+
+// Bintray
+//Properties properties = new Properties()
+//properties.load(project.rootProject.file('local.properties').newDataInputStreamtray {
+bintray {
+    user = 'tejadroid'
+    key = 'b279a96d2e34f0223fcf33403ea2853a6a70210d'
+
+    configurations = ['archives']
+    pkg {
+        repo = "MapMarkerSpiderView"
+        name = "map-marker-spider-view" //YOUR PACKAGE NAME
+        desc = 'Spider View of Marker on Google map.' // YOUR LIBRARY DESCRIPTION
+        websiteUrl = 'https://github.com/tejadroidapp/map-marker-spider-view' // YOUR SITE
+        vcsUrl = 'https://github.com/tejadroidapp/map-marker-spider-view.git' // YOUR GIT REPO
+        licenses = ["Apache-2.0"] // A LIST OF YOUR LICENCES
+        userOrg = 'tejadroidapp'
+        publish = true
+        publicDownloadNumbers = true
+        version {
+            name = '1.0'
+        }
+    }
+}

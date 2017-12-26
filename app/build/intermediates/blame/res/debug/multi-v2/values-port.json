@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/Tejas/Documents/Kotlin_App/SpiderBubbleMapMarker/spider-bubble-map-marker/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/Tejas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/2dc6db1769d442c17145d70484889ea8/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/Tejas/Documents/Kotlin_App/MapWithCustomPinView/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/Tejas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/2dc6db1769d442c17145d70484889ea8/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

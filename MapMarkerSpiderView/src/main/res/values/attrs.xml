@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="drawline">
+        <attr name="lines" format="integer" />
+        <attr name="inside_radius" format="integer" />
+        <attr name="outside_radius" format="integer" />
+        <attr name="icon_size" format="integer" />
+        <attr name="lines_width" format="integer" />
+        <attr name="lines_height" format="integer" />
+        <attr name="line_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="pin">
+        <attr name="color" format="color" />
+        <attr name="src" format="reference" />
+    </declare-styleable>
+</resources>

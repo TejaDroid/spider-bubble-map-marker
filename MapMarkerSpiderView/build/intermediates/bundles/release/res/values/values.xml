@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="material_black_transparent">#66242424</color>
+    <color name="primary_text">#000000</color>
+    <color name="secondary_text">#5b5b5b</color>
+    <declare-styleable name="drawline"><attr format="integer" name="lines"/><attr format="integer" name="inside_radius"/><attr format="integer" name="outside_radius"/><attr format="integer" name="icon_size"/><attr format="integer" name="lines_width"/><attr format="integer" name="lines_height"/><attr format="color" name="line_color"/></declare-styleable>
+    <declare-styleable name="pin"><attr format="color" name="color"/><attr format="reference" name="src"/></declare-styleable>
+    <dimen name="lower_font_size">10sp</dimen>
+    <dimen name="material_padding">16dp</dimen>
+    <dimen name="material_padding_double">32dp</dimen>
+    <dimen name="material_padding_half">8dp</dimen>
+    <dimen name="material_padding_quarter">4dp</dimen>
+    <dimen name="material_padding_triple">48dp</dimen>
+    <dimen name="primary_font_size">14sp</dimen>
+    <dimen name="secondary_font_size">12sp</dimen>
+    <dimen name="user_image_size">60dp</dimen>
+    <string name="app_name">MapMarkerSpiderView</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="LowerTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:textSize">@dimen/lower_font_size</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+    <style name="PrimaryTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/primary_font_size</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+    <style name="SecondaryTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:textSize">@dimen/secondary_font_size</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+</resources>

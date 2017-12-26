@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:drawline="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".map.MapFragment">
+
+    <FrameLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider_map" />
+
+    <TextView
+        android:id="@+id/divider_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hsv_user"
+        android:background="@color/colorAccent"
+        android:enabled="false"
+        android:maxLines="1"
+        android:padding="@dimen/material_padding_quarter"
+        android:text="Peoples On Map"
+        android:textColor="@android:color/white" />
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/hsv_ll_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <com.tejadroid.spiderview.widget.SpiderLineView
+        android:id="@+id/pin_options"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        drawline:inside_radius="80"
+        drawline:line_color="@color/colorAccent"
+        drawline:lines="6"
+        drawline:lines_height="40" />
+
+    <include layout="@layout/layout_loading" />
+
+</RelativeLayout>
